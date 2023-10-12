@@ -262,8 +262,8 @@ if __name__ == '__main__':
         
         # Save model weights
         if acc_by_deep_learning_way>best_acc_by_deep_learning_way:
-            torch.save(save_model_para, './saved_model/marchNet-ACC_byDL_{:.4f}.pth'.format(acc_by_deep_learning_way))
-            torch.save(save_support.data.cpu(), "./saved_model/marchNet-support_ACC_byDL_{:.4f}.pt".format(acc_by_deep_learning_way))
+            torch.save(save_model_para, './saved_model/matchingNetwork-ACC_byDL_{:.4f}.pth'.format(acc_by_deep_learning_way))
+            torch.save(save_support.data.cpu(), "./saved_model/matchingNetwork-support_ACC_byDL_{:.4f}.pt".format(acc_by_deep_learning_way))
 
             best_support = temp_support
             best_acc_by_deep_learning_way = acc_by_deep_learning_way
