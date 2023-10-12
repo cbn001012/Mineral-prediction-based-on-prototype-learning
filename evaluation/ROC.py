@@ -249,8 +249,8 @@ net_type:
 '''
 net_type = 2
 # Load the weights of the feature extractor and the learned prototypes for each category
-model_weight_path = "./saved_model/ProtoGCN-ACC_byDL_0.9657.pth" # model weights
-support = torch.load('./saved_model/ProtoGCN-support_ACC_byDL_0.9657.pt') # prototypes learned from support sets
+model_weight_path = "../saved_model/geometa-ACC_byDL_0.9657.pth" # model weights
+support = torch.load('../saved_model/geometa-support_ACC_byDL_0.9657.pt') # prototypes learned from support sets
 support = support.to(device)
 
 if net_type == 2:
