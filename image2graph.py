@@ -164,7 +164,6 @@ class mydataset(Dataset):
                     tif_edge_index = torch.tensor(edge, dtype=torch.long)
                     tif_label = torch.tensor(i, dtype=torch.int64)
                     tif_pos = torch.tensor(tif_coord, dtype=torch.float32)
-                    # 定义图结构数据对应的图片数据，以便于进行转化
                     tif_filename = str(file)
                     data = Data(x=tif_x, edge_index=tif_edge_index, label=tif_label, pos=tif_pos, filename=tif_filename)
                     data_list.append(data)
