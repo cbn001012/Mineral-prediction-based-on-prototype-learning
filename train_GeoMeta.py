@@ -439,9 +439,9 @@ if __name__ == '__main__':
         # Save model weights of best epoch
         if acc_by_deep_learning_way > best_acc_by_deep_learning_way:
             torch.save(save_model_para,
-                       './saved_model/2ProtoGCN-ACC_byDL_{:.4f}.pth'.format(acc_by_deep_learning_way))
+                       './saved_model/geometa-ACC_byDL_{:.4f}.pth'.format(acc_by_deep_learning_way))
             torch.save(save_support.data.cpu(),
-                       "./saved_model/2ProtoGCN-support_ACC_byDL_{:.4f}.pt".format(acc_by_deep_learning_way))
+                       "./saved_model/geometa-support_ACC_byDL_{:.4f}.pt".format(acc_by_deep_learning_way))
 
             best_support = temp_support
             best_acc_by_deep_learning_way = acc_by_deep_learning_way
