@@ -236,7 +236,7 @@ elif net_type==4:
     file_name = "MatchingNet"
 
 # Save the numpy heatmap matrix
-np.save("numpyData/{}_Hydrothermal_img.npy".format(file_name), Hydrothermal_img)
-np.save("numpyData/{}_Skarn_img.npy".format(file_name), Skarn_img)
-np.save("numpyData/{}_Porphyry_img.npy".format(file_name), Porphyry_img)
-np.save("numpyData/{}_Volcano_img.npy".format(file_name), Volcano_img)
+np.save("../numpyData/{}_Hydrothermal_img.npy".format(file_name), Hydrothermal_img)
+np.save("../numpyData/{}_Skarn_img.npy".format(file_name), Skarn_img)
+np.save("../numpyData/{}_Porphyry_img.npy".format(file_name), Porphyry_img)
+np.save("../numpyData/{}_Volcano_img.npy".format(file_name), Volcano_img)
