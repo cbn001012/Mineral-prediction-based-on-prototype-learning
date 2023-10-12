@@ -20,10 +20,10 @@ elif net_type==4:
     file_name = "MatchingNet"
 
 # Load the numpy data of heatmaps
-Hydrothermal_img = np.load("numpyData/{}_Hydrothermal_img.npy".format(file_name))
-Porphyry_img = np.load("numpyData/{}_Porphyry_img.npy".format(file_name))
-Skarn_img = np.load("numpyData/{}_Skarn_img.npy".format(file_name))
-Volcano_img = np.load("numpyData/{}_Volcano_img.npy".format(file_name))
+Hydrothermal_img = np.load("../numpyData/{}_Hydrothermal_img.npy".format(file_name))
+Porphyry_img = np.load("../numpyData/{}_Porphyry_img.npy".format(file_name))
+Skarn_img = np.load("../numpyData/{}_Skarn_img.npy".format(file_name))
+Volcano_img = np.load("../numpyData/{}_Volcano_img.npy".format(file_name))
 
 all_img = Hydrothermal_img+Skarn_img+Porphyry_img+Volcano_img
 all_img = (all_img-all_img.min())/(all_img.max()-all_img.min())
