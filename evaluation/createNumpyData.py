@@ -117,8 +117,8 @@ net_type:
 
 net_type = 2
 
-model_weight_path = "./ProtoGCN-ACC_byDL_0.9657.pth"
-support = torch.load('./ProtoGCN-support_ACC_byDL_0.9657.pt')
+model_weight_path = "../saved_model/geometa-ACC_byDL_0.9657.pth"
+support = torch.load('../saved_model/geometa-support_ACC_byDL_0.9657.pt')
 support = support.to(device)
 
 if net_type == 2:
@@ -236,7 +236,7 @@ elif net_type==4:
     file_name = "MatchingNet"
 
 # Save the numpy heatmap matrix
-np.save("numpyData/dim39/{}_Hydrothermal_img.npy".format(file_name), Hydrothermal_img)
-np.save("numpyData/dim39/{}_Skarn_img.npy".format(file_name), Skarn_img)
-np.save("numpyData/dim39/{}_Porphyry_img.npy".format(file_name), Porphyry_img)
-np.save("numpyData/dim39/{}_Volcano_img.npy".format(file_name), Volcano_img)
+np.save("numpyData/{}_Hydrothermal_img.npy".format(file_name), Hydrothermal_img)
+np.save("numpyData/{}_Skarn_img.npy".format(file_name), Skarn_img)
+np.save("numpyData/{}_Porphyry_img.npy".format(file_name), Porphyry_img)
+np.save("numpyData/{}_Volcano_img.npy".format(file_name), Volcano_img)
