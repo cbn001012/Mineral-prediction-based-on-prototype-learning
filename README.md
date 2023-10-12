@@ -17,14 +17,21 @@ The "evaluation" folder contains functions for testing the performance of the tr
 The "baselines" folder contains training codes for several baseline methods, including Prototypical Network, Relation Network, and Matching Network. Simply modify the relevant configurations as indicated in the comments and run the respective code for each method.
 ## Model Weights : "saved_model" folder
 The "saved_model" folder contains the weights of the feature extractor of the trained models and the learned prototypes vectors for five classes. We have saved the best epoch of all models during the training process, with the specific format as follows:
+
 "geometa-ACC_byDL_0.9657.pth": The weights of the feature extractor for the Geo-Meta model correspond to a best accuracy of 0.9657.
+
 "geometa-support_ACC_byDL_0.9657.pt": The Geo-Meta model has learned prototype vectors for five classes, with a corresponding best accuracy of 0.9657.
 ## Generate Prediction Heatmaps : "numpyData" folder
 The "numpyData" folder contains numpy data files for the probability of mineral occurrence at each location in the study area, as predicted by all models, with the specific format as follows:
+
 "Geo-Meta_Hydrothermal_img.npy" : The probability of each grid sample in the study area belonging to the "Hydrothermal" category.
+
 "Geo-Meta_Porphyry_img.npy" : The probability of each grid sample in the study area belonging to the "Porphyry" category.
+
 "Geo-Meta_Skarn_img.npy" : The probability of each grid sample in the study area belonging to the "Skarn" category.
+
 "Geo-Meta_Volcano_img.npy" : The probability of each grid sample in the study area belonging to the "Volcano" category.
+
 Since our data is confidential, you can generate prediction heatmaps based on these npy files by running the "createHeatingImg.py" file. If you want to view the prediction results of different networks, simply modify the corresponding file paths in the "createHeatingImg.py" file.
 
 
