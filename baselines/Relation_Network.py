@@ -282,8 +282,8 @@ if __name__ == '__main__':
         acc_by_deep_learning_way = acc_by_deep_learning_way.item()
 
         if acc_by_deep_learning_way>best_acc_by_deep_learning_way:
-            torch.save(save_model_para, './saved_model/relationNet-ACC_byDL_{:.4f}.pth'.format(acc_by_deep_learning_way))
-            torch.save(save_support.data.cpu(), "./saved_model/relationNet-support_ACC_byDL_{:.4f}.pt".format(acc_by_deep_learning_way))
+            torch.save(save_model_para, './saved_model/relationNetwork-ACC_byDL_{:.4f}.pth'.format(acc_by_deep_learning_way))
+            torch.save(save_support.data.cpu(), "./saved_model/relationNetwork-support_ACC_byDL_{:.4f}.pt".format(acc_by_deep_learning_way))
 
             best_support = temp_support
             best_acc_by_deep_learning_way = acc_by_deep_learning_way
