@@ -204,7 +204,7 @@ def fast_adapt(graph_dataset, model, batch, ways, shot, unlabel_shot, query_num,
         embeddings_graph = model.GCNembedding(g_data.to(device)) # (90,64)
         b.append(embeddings_graph.data)
 
-    embeddings_integrate = torch.concat((CNN_embeddings, b[-1]), dim=1)  # 将两个特征图进行拼接融合作为最终嵌入 (90, 128+64=192)
+    embeddings_integrate = torch.concat((CNN_embeddings, b[-1]), dim=1)  # fuse feature maps
 
     embeddings = embeddings_integrate
 
