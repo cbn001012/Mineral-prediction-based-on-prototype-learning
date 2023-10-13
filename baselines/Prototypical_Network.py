@@ -9,7 +9,7 @@ import torchvision.transforms as transforms
 import torchvision as tv
 import learn2learn as l2l
 from learn2learn.data.transforms import NWays, KShots, LoadData, RemapLabels
-from lib import loadTifImage
+from tools import loadTifImage
 
 # Calculate the Euclidean distance between two vectors
 def pairwise_distances_logits(a, b):
