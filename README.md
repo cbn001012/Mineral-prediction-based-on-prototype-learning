@@ -33,7 +33,7 @@ The "numpyData" folder contains numpy data files for the probability of mineral 
 
 Since our data is confidential, you can generate prediction heatmaps based on these npy files by running the "createHeatingImg.py" file. If you want to view the prediction results of different networks, simply modify the corresponding file paths in the "createHeatingImg.py" file.
 ![Heatmap predicted by Geo-Meta in the study area](figs/heatmap.jpg)
-![[Heatmaps predicted by all models](figs/heatmap-comprasion.jpg)
+![Heatmaps predicted by all models](figs/heatmap-comprasion.jpg)
 
 
 
