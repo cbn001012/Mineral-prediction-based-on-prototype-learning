@@ -32,6 +32,7 @@ The "numpyData" folder contains numpy data files for the probability of mineral 
 "Geo-Meta_Volcano_img.npy" : The probability of each grid sample in the study area belonging to the "Volcano" category.
 
 Since our data is confidential, you can generate prediction heatmaps based on these npy files by running the "createHeatingImg.py" file. If you want to view the prediction results of different networks, simply modify the corresponding file paths in the "createHeatingImg.py" file.
+![Heatmap predicted by Geo-Meta in the study area](figs/heatmap.jpg)
 
 
 
