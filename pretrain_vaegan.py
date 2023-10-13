@@ -9,11 +9,8 @@ from torchvision import transforms as tfs
 from torchvision.utils import save_image
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
-from tool import loadTifImage
+from tools import loadTifImage
 import torchvision.transforms as transforms
-# plt.rcParams['figure.figsize'] = (10.0, 8.0)
-# plt.rcParams['image.interpolation'] = 'nearest'
-# plt.rcParams['image.cmap'] = 'gray'
 
 def preprocess_img(x):
     x = tfs.ToTensor()(x)
