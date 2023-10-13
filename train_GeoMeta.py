@@ -10,11 +10,10 @@ import torchvision.transforms as transforms
 import torchvision as tv
 from learn2learn.data.transforms import NWays, KShots, LoadData, RemapLabels
 import learn2learn as l2l
-from lib import loadTifImage
+from tools import loadTifImage
 from torch_geometric.nn import GCNConv
 from torch_geometric.nn import global_max_pool, global_mean_pool, global_add_pool
 import os
-os.environ['CUDA_LAUNCH_BLOCKING'] = '3'
 
 # Calculate the Euclidean distance between two vectors
 def pairwise_distances_logits(a, b):
